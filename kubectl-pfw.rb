@@ -5,21 +5,21 @@
 class KubectlPfw < Formula
   desc "A kubectl plugin for port-forwarding multiple services or pods at once"
   homepage "https://github.com/roeyazroel/kubectl-pfw"
-  version "0.0.2-SNAPSHOT-5b14520"
+  version "0.0.8"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/roeyazroel/kubectl-pfw/releases/download/v0.0.2/kubectl-pfw_0.0.2-SNAPSHOT-5b14520_darwin_amd64.tar.gz"
-      sha256 "640794e62a5d29b4ba231e52c0f499bb5a5679003481c8de8162b637cfa46113"
+      url "https://github.com/roeyazroel/kubectl-pfw/releases/download/v0.0.8/kubectl-pfw_0.0.8_darwin_amd64.tar.gz"
+      sha256 "876eeca33fad864eac52a53e27d1e12a6b41aeb2b6a81aa4f460a0939340892f"
 
       def install
         bin.install "kubectl-pfw"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/roeyazroel/kubectl-pfw/releases/download/v0.0.2/kubectl-pfw_0.0.2-SNAPSHOT-5b14520_darwin_arm64.tar.gz"
-      sha256 "8bc7ff9e22a3bb372308c1d0e58ae840b3414496864c1ed845006518006e2940"
+      url "https://github.com/roeyazroel/kubectl-pfw/releases/download/v0.0.8/kubectl-pfw_0.0.8_darwin_arm64.tar.gz"
+      sha256 "0334097679fb36af0f2a6399ea2385b9c511f8ffa2dc11fd8ed3877634b292db"
 
       def install
         bin.install "kubectl-pfw"
@@ -30,8 +30,8 @@ class KubectlPfw < Formula
   on_linux do
     if Hardware::CPU.intel?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/roeyazroel/kubectl-pfw/releases/download/v0.0.2/kubectl-pfw_0.0.2-SNAPSHOT-5b14520_linux_amd64.tar.gz"
-        sha256 "cf0752c91b15b424ac7ac08807a2f63d399f8b530f591226b8582909b7ad1b50"
+        url "https://github.com/roeyazroel/kubectl-pfw/releases/download/v0.0.8/kubectl-pfw_0.0.8_linux_amd64.tar.gz"
+        sha256 "595f105318bd2186e25bb1813d964f71de6f6057577273d3a9e680f33d91bca7"
 
         def install
           bin.install "kubectl-pfw"
@@ -40,8 +40,8 @@ class KubectlPfw < Formula
     end
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/roeyazroel/kubectl-pfw/releases/download/v0.0.2/kubectl-pfw_0.0.2-SNAPSHOT-5b14520_linux_arm64.tar.gz"
-        sha256 "bc81a75ce4f3f24a9a2fe98991210937924f81bd274a29283b0996707c819d3f"
+        url "https://github.com/roeyazroel/kubectl-pfw/releases/download/v0.0.8/kubectl-pfw_0.0.8_linux_arm64.tar.gz"
+        sha256 "a9a2ec2392b384156e46c41fc39b8705b04eff03879f1482165fe08b3c819620"
 
         def install
           bin.install "kubectl-pfw"
